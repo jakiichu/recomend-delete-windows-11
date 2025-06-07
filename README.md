@@ -21,3 +21,10 @@ This script (`script.reg`) is designed to disable the "Recommended" section in t
    - Alternatively, run the following command in Command Prompt (as Administrator):
      ```cmd
      reg import script.reg
+     ```
+     
+Or: 
+```PowerShell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/jakiichu/recomend-delete-windows-11/main/script.reg" -OutFile "script.reg"
+reg import script.reg
+```
